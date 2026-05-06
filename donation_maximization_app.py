@@ -151,7 +151,6 @@ def load_data(uploaded_file=None):
         return pd.read_csv(uploaded_file)
     # Leer desde carpeta local data_donors/ 
     data_path = Path("data/donors_dataset.csv") 
-    # data_path = Path(r"C:/Users/cesar/OneDrive/Escritorio/UNICEF/UPLIFT/UPFLIT_1/data/donors_dataset.csv")
     if data_path.exists():
         return pd.read_csv(data_path)
     
